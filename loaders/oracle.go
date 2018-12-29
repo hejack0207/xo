@@ -86,7 +86,7 @@ func OrParseType(args *internal.ArgType, dt string, nullable bool) (int, string,
 	case "char", "nchar", "varchar", "varchar2", "nvarchar2",
 		"long",
 		"clob", "nclob",
-		"rowid":
+		"rowid", "urowid", "undefined":
 		nilVal = `""`
 		typ = "string"
 
